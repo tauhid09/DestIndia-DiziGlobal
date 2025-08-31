@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEST INDIA - Product Listing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="listing_new.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container" id="header-container">
+            <div class="header-top">
+                <div class="top-nav">
+                    <a href="#" class="top-link">Track Orders</a>
+                    <a href="#" class="top-link">Wishlist</a>
+                    <a href="#" class="top-link">Gift Card</a>
+                    <a href="#" class="top-link">Sign In/Sign Up</a>
+                    <a href="#" class="top-link seller"> <img src="icon/crown.png" alt="" style="width: 17px;">Become a Seller</a>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="logo">
+                    <div class="logo-content">
+                        <img src="https://placehold.co/300x50" alt="">
+                    </div>
+                </div>
+                <div class="categories-dropdown">
+                    <button class="categories-btn">Categories <img src="icon/down-arrow.png" alt="" style="width: 20px;"></button>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button class="search-btn"><img src="icon/search.png" alt=""></button>
+                </div>
+                <div class="header-actions">
+                    <img src="https://placehold.co/50" alt="" style="width: 50px; height: 50px;">
+                    <img src="icon/profile.png" alt="" style="width: 48px; height: 48px;">
+                    <img src="icon/bag.png" alt="" style="width: 52px; height: 52px;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="#" class="category-tab active">Men's Fashion</a>
+                <a href="#" class="category-tab">Women's Fashion</a>
+                <a href="#" class="category-tab">Kid's Fashion</a>
+                <a href="#" class="category-tab">Bag & Accessories</a>
+                <a href="#" class="category-tab">Home & Decor</a>
+                <a href="#" class="category-tab">Footwear</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar">
+                    <div class="filters-header">
+                        <h3>Filters</h3>
+                        <button class="clear-all">Clear All</button>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Department</h4>
+                        <div class="filter-option">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Men's Clothing
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Department</h4>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="ethnic">
+                                <label for="ethnic">Ethnic Wear <span class="count">234545</span></label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="innerwear">
+                                <label for="innerwear">Inner & Nightwear <span class="count">1176</span></label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="casual">
+                                <label for="casual">Casual Wear <span class="count">14004</span></label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="formal">
+                                <label for="formal">Formal Wear <span class="count">234545</span></label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="sports">
+                                <label for="sports">Sports Wear <span class="count">234545</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Brand</h4>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Size</h4>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Colour</h4>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Price</h4>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="product-area">
+                    <div class="sort-section">
+                        <div class="sort-dropdown">
+                            <select>
+                                <option>Sort by: Popularity</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest First</option>
+                                <option>Customer Rating</option>
+                            </select>
+                        </div>
+                        <button class="grid-view-btn">
+                            <i class="fas fa-th"></i>
+                        </button>
+                    </div>
+
+                    <div class="products-grid">
+                        <!-- Row 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/769749/pexels-photo-769749.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Yellow Shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Spyker</div>
+                                <div class="product-name">Spyker Yellow Cotton Regular Fit shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 999</span>
+                                    <span class="original-price">₹1199</span>
+                                    <span class="discount">85% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">4.8 ★</span>
+                                    <span class="rating-count">(12)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Blue Shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">U.S. Polo</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 888</span>
+                                    <span class="original-price">₹1199</span>
+                                    <span class="discount">75% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">3.4 ★</span>
+                                    <span class="rating-count">(9)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Striped Shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Tape</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 456</span>
+                                    <span class="original-price">₹999</span>
+                                    <span class="discount">25% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">1.4 ★</span>
+                                    <span class="rating-count">(10)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Black Shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Adidas</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 345</span>
+                                    <span class="original-price">₹999</span>
+                                    <span class="discount">15% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">2.4 ★</span>
+                                    <span class="rating-count">(7)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Black T-shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Nike</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 999</span>
+                                    <span class="original-price">₹1199</span>
+                                    <span class="discount">20% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">4.1 ★</span>
+                                    <span class="rating-count">(18)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Light Blue Shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Spyker</div>
+                                <div class="product-name">Spyker Yellow Cotton Regular Fit shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 999</span>
+                                    <span class="original-price">₹1199</span>
+                                    <span class="discount">85% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">4.8 ★</span>
+                                    <span class="rating-count">(12)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Blue Polo">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">U.S. Polo</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 888</span>
+                                    <span class="original-price">₹1199</span>
+                                    <span class="discount">75% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">3.4 ★</span>
+                                    <span class="rating-count">(9)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Beige Polo">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Tape</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 456</span>
+                                    <span class="original-price">₹999</span>
+                                    <span class="discount">25% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">1.4 ★</span>
+                                    <span class="rating-count">(10)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Maroon Shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Adidas</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 345</span>
+                                    <span class="original-price">₹999</span>
+                                    <span class="discount">15% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">2.4 ★</span>
+                                    <span class="rating-count">(7)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Graphic T-shirt">
+                                <div class="image-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="brand">Nike</div>
+                                <div class="product-name">Red Tape Black Cotton Regular Fit T-shirt</div>
+                                <div class="price-section">
+                                    <span class="current-price">₹ 999</span>
+                                    <span class="original-price">₹1199</span>
+                                    <span class="discount">20% Off</span>
+                                </div>
+                                <div class="rating">
+                                    <span class="rating-score">4.1 ★</span>
+                                    <span class="rating-count">(18)</span>
+                                </div>
+                                <div class="limited-stock">Limited Stock!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="listing_new.js"></script>
+</body>
+</html>
