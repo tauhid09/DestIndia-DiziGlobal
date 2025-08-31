@@ -48,6 +48,7 @@ header-container{
     gap: 32px;
     align-items: center;
     font-size: 13px;
+    margin-right: 10px;
 }
 
 .top-link {
@@ -95,6 +96,9 @@ header-container{
 }
 
 .categories-btn {
+    display: flex;
+    align-items: center;
+    gap: 3px;
     background-color: #444;
     color: white;
     border: none;
@@ -161,24 +165,10 @@ header-container{
     align-items: center;
 }
 
-.action-btn {
-    background: none;
-    border: none;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
+.header-actions img{
+    width: 35px;
+    height: 35px;
     cursor: pointer;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.action-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .cart-btn {
@@ -205,9 +195,13 @@ header-container{
     display: flex;
     align-items: center;
     overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -231,14 +225,20 @@ header-container{
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 32px;
     opacity: 0.9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.hero-subtitle span{
+    font-weight: 600;
+    font-size: 28px;
+    color: #ffffff;
 }
 
 .hero-btn {
-    background-color: #ff6b6b;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 16px 32px;
     border-radius: 8px;
@@ -250,7 +250,7 @@ header-container{
 }
 
 .hero-btn:hover {
-    background-color: #ff5252;
+    background-color: #d6d6d6;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
 }
@@ -268,25 +268,6 @@ header-container{
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.festival-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #ff6b6b;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
 /* Brands Section */
 .brands {
     background-color: #f8f9fa;
@@ -295,6 +276,7 @@ header-container{
 
 .brand-grid {
     display: grid;
+    grid-template-rows: 250px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 24px;
     text-align: center;
@@ -302,17 +284,23 @@ header-container{
 
 .brand-item {
     padding: 16px;
-    background: white;
+    background: transparent;
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
     color: #333;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease;
 }
 
 .brand-item:hover {
     transform: translateY(-4px);
+}
+
+.image-banner{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://placehold.co/1920x300);
 }
 
 /* Sections */
@@ -758,14 +746,6 @@ html {
 
 .nav-link:hover::after {
     width: 100%;
-}
-
-/* Focus states for accessibility */
-button:focus,
-input:focus,
-a:focus {
-    outline: 2px solid #646cff;
-    outline-offset: 2px;
 }
 
 /* Custom scrollbar */
