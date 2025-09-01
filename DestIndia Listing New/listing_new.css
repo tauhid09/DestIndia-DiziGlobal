@@ -15,12 +15,10 @@ body {
     /* margin: 0 auto; */
     /* padding: 0 16px; */
 }
-header-container{
-    margin: 0px;
-}
+
 
 /* Header */
-.header {
+header {
     background-color: #2c2c2c;
     color: white;
     position: sticky;
@@ -218,10 +216,8 @@ header-container{
 }
 
 /* Main Content */
-main{
+main {
     margin: 0px 20px;
-}
-.main-content {
     padding: 24px 0;
 }
 
