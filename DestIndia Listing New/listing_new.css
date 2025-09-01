@@ -195,8 +195,11 @@ header-container{
 }
 
 .category-tabs {
-    display: flex;
-    gap: 48px;
+    margin-left: 10px;
+    display: flex;4
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 48px; */
 }
 
 .category-tab {
@@ -312,7 +315,8 @@ main{
 
 .sort-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    gap: 5px;
     align-items: center;
     margin-bottom: 24px;
     background-color: white;

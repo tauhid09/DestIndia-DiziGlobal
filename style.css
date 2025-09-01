@@ -16,7 +16,8 @@ body {
     /* margin: 0 auto; */
     /* padding: 0 16px; */
 }
-header-container{
+
+header-container {
     margin: 0px;
 }
 
@@ -88,9 +89,11 @@ header-container{
     display: flex;
     flex-direction: column;
 }
-.logo-content img{
-    margin-left:10px ;
+
+.logo-content img {
+    margin-left: 10px;
 }
+
 .categories-dropdown {
     margin-left: 24px;
 }
@@ -165,7 +168,7 @@ header-container{
     align-items: center;
 }
 
-.header-actions img{
+.header-actions img {
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -230,7 +233,8 @@ header-container{
     opacity: 0.9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.hero-subtitle span{
+
+.hero-subtitle span {
     font-weight: 600;
     font-size: 28px;
     color: #ffffff;
@@ -297,10 +301,44 @@ header-container{
     transform: translateY(-4px);
 }
 
-.image-banner{
+.image-banner {
     width: 100%;
     height: 300px;
     background-image: url(https://placehold.co/1920x300);
+}
+
+.brand_logo {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+}
+
+.brand_slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    position: absolute;
+    animation: scroll 20s linear infinite;
+    width: 180%;
+}
+
+.brand_slide img {
+    padding: 0px 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.brand_logo:hover .brand_slide {
+    animation-play-state: paused;
 }
 
 /* Sections */
@@ -615,43 +653,43 @@ header-container{
         flex-direction: column;
         gap: 16px;
     }
-    
+
     .search-bar {
         margin: 0;
         max-width: 100%;
     }
-    
+
     .nav {
         flex-wrap: wrap;
         gap: 16px;
         justify-content: center;
     }
-    
+
     .hero-content,
     .banner-content {
         flex-direction: column;
         text-align: center;
         gap: 32px;
     }
-    
+
     .hero-title {
         font-size: 36px;
     }
-    
+
     .banner-text h2 {
         font-size: 28px;
     }
-    
+
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 16px;
     }
-    
+
     .price-grid {
         grid-template-columns: 1fr;
         gap: 16px;
     }
-    
+
     .footer-content {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 24px;
@@ -662,32 +700,32 @@ header-container{
     .container {
         padding: 0 12px;
     }
-    
+
     .section {
         padding: 32px 0;
     }
-    
+
     .hero-title {
         font-size: 28px;
     }
-    
+
     .section-title {
         font-size: 24px;
     }
-    
+
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 12px;
     }
-    
+
     .product-card img {
         height: 200px;
     }
-    
+
     .hero {
         min-height: 400px;
     }
-    
+
     .festival-badge {
         top: 10px;
         right: 10px;
@@ -706,18 +744,36 @@ html {
     animation: fadeInUp 0.6s ease-out;
 }
 
-.product-card:nth-child(1) { animation-delay: 0.1s; }
-.product-card:nth-child(2) { animation-delay: 0.2s; }
-.product-card:nth-child(3) { animation-delay: 0.3s; }
-.product-card:nth-child(4) { animation-delay: 0.4s; }
-.product-card:nth-child(5) { animation-delay: 0.5s; }
-.product-card:nth-child(6) { animation-delay: 0.6s; }
+.product-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.product-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.product-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.product-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.product-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
