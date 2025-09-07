@@ -36,14 +36,19 @@ header {
 }
 
 .header-top  {
+    width: 100%;
+    /* max-width: 1440px; */
     margin: 0;
     max-width: none;
     padding: 0 16px;
 }
 
 .top-nav {
+    width: 100%;
+    /* max-width: 1440px; */
+    height: 60px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     gap: 32px;
     align-items: center;
     font-size: 13px;
@@ -80,7 +85,7 @@ header {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    padding: 16px 0;
+    padding: 10px 0;
 }
 
 .logo-content {
@@ -109,6 +114,7 @@ header {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 0.1rem solid #ffffff67;
 }
 
 .categories-btn:hover {
@@ -273,13 +279,13 @@ header {
 /* Brands Section */
 .brands {
     background-color: #f8f9fa;
-    padding: 32px 0;
+    padding: 45px 0;
 }
 
 .brand-grid {
     display: grid;
-    grid-template-rows: 250px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 186px;
+    grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
     gap: 24px;
     text-align: center;
 }
